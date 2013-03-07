@@ -1,0 +1,33 @@
+Języki programowania do przetwarzania języka naturalnego 
+========================================================
+
+Cel ćwiczenia
+-------------
+
+Celem zajęć jest zapoznanie się i przetestowanie różnych języków programowania po kątem ich zastosowań w przetwarzaniu języka naturalnego.
+
+Opis ćwiczenia
+--------------
+
+Podczas zajęć należy zwrócić szczególną uwagę na: szybkość i łatwość pisania kodu w konkretnym języku wydajność gotowego programu dostępność bibliotek lub też możliwości języka wspomagające działania na łańcuchach znakowych wymagania stawiane przez program środowisku w którym jest uruchamiany ewentualne ograniczenia na wielkość przetwarzanych danych.
+
+Podczas zajęć należy napisać krótki program, w wyniku pracy którego jest tworzona statystyka tekstu. Program jako dane wejściowe otrzymuje dowolnych rozmiarów plik zawierający teksty w języku polskim. Wynikiem prezentowany przez program jest statystyka występowania wyrazów w tym tekście, posortowana w kolejności od najczęściej występujących wyrazów do najrzadziej.
+
+Program musi być napisany w przynajmniej trzech językach programowania. Liczba przetestowanych języków wpływa na uzyskaną ocenę z laboratorium. Przy wyborze tylko trzech języków języki C i C++ są traktowane jak jeden język.
+
+Na zakończenie laboratorium należy napisać krótkie sprawozdanie podsumowujące przeprowadzone badania. Sprawozdanie powinno zawierać subiektywne (łatwość programowania w tym języku, szybkość programowania itp.) oraz obiektywne (czas działania, znane ograniczenia itp.) wnioski z przeprowadzonych badań.
+Laboratorium przygotowuje studenta do właściwego wyboru języka programowania w kolejnych zajęciach prowadzonych w ramach przedmiotu Przetwarzanie języka naturalnego.
+
+Plan ćwiczenia
+--------------
+
+1. Zapoznanie się z opisem laboratorium.
+2. Krótka dyskusja ustna na forum całej grupy na temat wyboru języka.
+3. Implementacja przynajmniej trzech programów (każdy w innym języku). 
+4. Porównanie wyników działania programów.
+5. Sporządzenie sprawozdania.
+
+Materiały
+---------
+
+Przykładowy tekst – plik potop.txt <FIXME: link>
