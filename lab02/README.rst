@@ -31,10 +31,12 @@ Z Twierdzenia Bayesa mamy:
 - P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie (tzn. przykładowym zbiorze tekstów).
 
 Jako P(w|c) ustalamy prawdopodobieństwo wystąpienia określonego rodzaju błędu. 
-Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina, gdzie:
+Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina. Z typami błędów
+można zapoznać się w `[Dorosz, 2008] <http://journals.bg.agh.edu.pl/AUTOMATYKA/2008-01/Auto03.pdf>`_, tj:
 
-* 1/4 – odległość “polonica” czyli żuk ↔ zuk
+* 1/4 – odległość “polonica” czyli żuk ↔ zuk,
 * 1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
+* 1/4 - odległość "pomyłki typograficzne",
 * ½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
 
 Pozostałe elementy liczymy normalnie.
@@ -61,3 +63,4 @@ Materiały:
 - sjp.txt - słownik polskich wyrazów z którego korzysta m.in. aspell
 - bledy.txt - plik z błedami służące do wyznaczenia P(w|c)
 - `Milionowy Podkorpus Języka Polskiego <http://nkjp.pl/index.php?page=14&lang=0>`_ który posłuży do wyznaczenia P(c)
+- Dorosz K., Automatyka 2008/1, `Automatyczne sprawdzanie poprawności pisowni w języku polskim oparte na odległości Levenshteina <http://journals.bg.agh.edu.pl/AUTOMATYKA/2008-01/Auto03.pdf>`_
