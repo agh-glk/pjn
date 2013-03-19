@@ -1,5 +1,5 @@
-Wnioskowanie statystyczne w przetwarzaniu języka naturalnego
-============================================================
+Wnioskowanie statystyczne w sprawdzaniu poprawności pisowni
+===========================================================
 
 Cel ćwiczenia:
 --------------
@@ -51,20 +51,59 @@ wygładzaniem jest następująca:
 Niech N - będzie ilością wyrazów w słowniku, M - ilością wyrazów w korpusie, Nc - ilość wystąpień wyrazu c w korpusie.
 
 Załóżmy, że dany wyraz c nie wystąpił ani razu w korpusie - bez wygładzania 
-jego prawdopodobieństwo wystąpienia 
-
-.. image:: http://latex.codecogs.com/gif.latex?P%28c%29%3D%5Cfrac%7BN_c%7D%7BM%7D
-
-wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki. 
+jego P(c) = Nc/M wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki. 
 Aby uniknąć tego typu
 zjawiska zakładamy, że każdy wyraz wystąpił co najmniej raz. 
 Aby jednak suma wszystkich P(c) równa wynosiła 1, należy zwiększyć mianownik w w/w ułamku o ilość wszystkich wyrazów, 
-a zatem "wygładzone" prawdopodobieństwo będzie równe:
+a zatem "wygładzone" P(c) będzie równe (Nc+1)/(M+N).
 
-.. image:: http://latex.codecogs.com/gif.latex?P%28c%29%3D%5Cfrac%7BN_c+1%7D%7BM+N%7D
+Wejście i wyjście programu spellcheckera
+----------------------------------------
+
+Pisząc program spellcheckera proszę zwrócić uwagę na to, aby był on odpowiednio zoptymalizowany. To znaczy 
+sprawdzenie pojedynczego napisu powinno trwać nie więcej niż około 0.5 s na nowoczesnej maszynie.
+
+Porgram na standardowym wejściu powinien przyjmować listę wyrazów zakodowanych w formacie UTF-8, po jednym wyrazie na linię 
+(proszę wykonać odpowiedni stripping białych znaków na początku i końcu napisu dla pewności). Np::
+  
+  peis
+  kompóter
+  maka
 
 
 
+Program powinien generować na standardowym wyjściu listę propozycji poprawnych napisów (wyrazów). Lista napisów powinna być 
+rozdzielona znakiem przecinka. Białe znaki są nieistotne. Np::
+
+  pies, pejs
+  komputer
+  mąka, mąką, mała
+
+
+Typowe wywołanie programu to::
+
+  cat mistakes.txt | ./spellchecker
+
+
+Testowanie jakości spellcheckera
+--------------------------------
+
+Jakość sugerowanych poprawek przez spellcheckera można zmierzyć programem spellrank.py. Program ten analizuje wyjście 
+generowane przez program spellcheckera i ocenia każdy pojedynczy przypadek następująco:
+
+* oceniana jest ILOŚĆ odpowiedzi oraz POZYCJA dobrej odpowiedzi na liście, tzn. im mniej spellchecker zaproponuje wariantów tym lepiej, im wcześniej dobra odpowiedź pojawia się na liscie wariantów tym lepiej,
+* w najlepszym przypadku, gdy lista odpowidzi jest 1 elementowa i zawiera ono dobrą propozycję, program oceniający przyznaje 1.0 punkt,
+* lista opdowiedzi nie może być dłuższa niż 5 elementów (włącznie), jeśli jest dłuższa program oceniający automatycznie przyznaje 0 punktów za to zadanie,
+* w innych przypadkach program oceniający odejmuje odpowiedni ułamek punktów uwzględniając średnią ważoną pozycji (60%) oraz długości listy (40%).
+
+Typowe uruchomienie programu oceniającego wygląda następująco::
+
+  cat mistakes.txt | ./spellchecker | pjn/lab02/spellrank/spellrank.py -f correct.txt
+
+
+Program oceniający posiada także tryb verbose aktywowany przełącznikiem ``-v``.
+
+Maksymalna ilość punktów do zdobycia jest zawsze równa liczbie przypadków (linii w pliku testowym). Im więcej punktów uzyska spellchecker tym lepiej.
 
 Materiały:
 ----------
