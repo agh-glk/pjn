@@ -48,8 +48,9 @@ wygładzaniem jest następująca:
 
 Niech N - będzie ilością wyrazów w słowniku, M - ilością wyrazów w korpusie, Nc - ilość wystąpień wyrazu c w korpusie.
 
-Załóżmy, że dany wyraz c' nie wystąpił ani razu w korpusie - bez wygładzania 
-jego P(c') = Nc/M wynosi zatem 0, czyli nigdy nie będzie on odpowiednim kandydatem do poprawki. Aby uniknąć tego typu
+Załóżmy, że dany wyraz c nie wystąpił ani razu w korpusie - bez wygładzania 
+jego P(c) = Nc/M wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki. 
+Aby uniknąć tego typu
 zjawiska zakładamy, że każdy wyraz wystąpił co najmniej raz. 
 Aby jednak suma wszystkich P(c) równa wynosiła 1, należy zwiększyć mianownik w w/w ułamku o ilość wszystkich wyrazów, 
 a zatem "wygładzone" P(c) będzie równe (Nc+1)/(M+N).
