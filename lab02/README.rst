@@ -51,11 +51,19 @@ wygładzaniem jest następująca:
 Niech N - będzie ilością wyrazów w słowniku, M - ilością wyrazów w korpusie, Nc - ilość wystąpień wyrazu c w korpusie.
 
 Załóżmy, że dany wyraz c nie wystąpił ani razu w korpusie - bez wygładzania 
-jego P(c) = Nc/M wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki. 
+jego prawdopodobieństwo wystąpienia 
+
+.. image:: http://latex.codecogs.com/gif.latex?P%28c%29%3D%5Cfrac%7BN_c%7D%7BM%7D
+
+wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki. 
 Aby uniknąć tego typu
 zjawiska zakładamy, że każdy wyraz wystąpił co najmniej raz. 
 Aby jednak suma wszystkich P(c) równa wynosiła 1, należy zwiększyć mianownik w w/w ułamku o ilość wszystkich wyrazów, 
-a zatem "wygładzone" P(c) będzie równe (Nc+1)/(M+N).
+a zatem "wygładzone" prawdopodobieństwo będzie równe:
+
+.. image:: http://latex.codecogs.com/gif.latex?P%28c%29%3D%5Cfrac%7BN_c+1%7D%7BM+N%7D
+
+
 
 
 Materiały:
