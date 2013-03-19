@@ -10,34 +10,49 @@ Opis ćwiczenia:
 
 Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi - np. dla napisu "pics" najbliższym wyrazem ze słownika będzie forma "pies". 
 
-"Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to najczęściej `metryka Levenshteina <http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina>`_ zwana także odległością edycyjną.  
+"Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to 
+najczęściej `metryka Levenshteina <http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina>`_ zwana także odległością edycyjną.  
 
-Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
+Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – 
+tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. 
+Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
 
 .. image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29
 
-
+takie "c" dla którego prawdopodobieństwo, że to właśnie "c" jest właściwą poprawką dla "w" jest maksymalne. 
 
 Z Twierdzenia Bayesa mamy:
 
-argmaxc P(c|w) = argmaxc P(w|c) P(c) / P(w)
+.. image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29%3Dargmax_c%5Cfrac%7BP%28w%7Cc%29P%28c%29%7D%7BP%28w%29%7D
 
-P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Dla każdego jest identyczny – więc nie jest potrzebny do szacowania.
 
-P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie.
+- P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Dla każdego c jest identyczny – więc nie jest potrzebny do szacowania.
 
-Jako P(w|c) ustalamy prawdopodobieństwo wystąpienia określonego błędu. Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina, gdzie:
- * 1/4 – odległość “polonica” czyli żuk ↔ zuk
- * 1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
- * ½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
+- P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie (tzn. przykładowym zbiorze tekstów).
 
-Pozostałe elementy liczymy normalnie
+Jako P(w|c) ustalamy prawdopodobieństwo wystąpienia określonego rodzaju błędu. 
+Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina, gdzie:
+
+* 1/4 – odległość “polonica” czyli żuk ↔ zuk
+* 1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
+* ½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
+
+Pozostałe elementy liczymy normalnie.
 
 Zliczyć prawdopodobieństwa wystąpienia błędu w określonej odległości na podstawie analizy pliku z błędami.
-Przy zliczaniu frekwencji i kategorii odległości błędów zastosować wygładzanie Laplace'a o wartości 1. 
+
+Przy zliczaniu frekwencji i kategorii odległości błędów zastosować `wygładzanie Laplace'a o wartości 1 <http://en.wikipedia.org/wiki/Additive_smoothing>`_.
+
+Wygładzanie to stosujemy przy zliczaniu np. wyrazów w korpusie w celu wyznaczenia P(c). Intuicja stojąca za 
+wygładzaniem jest następująca: załóżmy, że dany wyraz c' nie wystąpił ani razu w korpusie - bez wygładzania 
+jego P(c') wynosi zatem 0, czyli nigdy nie będzie on odpowiednim kandydatem do poprawki. Aby uniknąć tego typu
+zjawiska zakładamy, że każdy wyraz wystąpił co najmniej raz. 
+Aby jednak suma wszystkich P(c) równa (ilość wystąpień c)/(ilość wszystkich wyrazów)
+wynosiła 1, należy zwiększyć mianownik w w/w ułamku o ilość wszystkich wyrazów.
+
 
 Materiały:
 ----------
-
 - sjp.txt - słownik polskich wyrazów z którego korzysta m.in. aspell
-
+- bledy.txt - plik z błedami służące do wyznaczenia P(w|c)
+- `Milionowy Podkorpus Języka Polskiego <http://nkjp.pl/index.php?page=14&lang=0>`_ który posłuży do wyznaczenia P(c)
