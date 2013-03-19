@@ -27,9 +27,10 @@ P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Dla każdego jest 
 P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie.
 
 Jako P(w|c) ustalamy prawdopodobieństwo wystąpienia określonego błędu. Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina, gdzie:
-1/4 – odległość “polonica” czyli żuk ↔ zuk
-1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
-½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
+ * 1/4 – odległość “polonica” czyli żuk ↔ zuk
+ * 1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
+ * ½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
+
 Pozostałe elementy liczymy normalnie
 
 Zliczyć prawdopodobieństwa wystąpienia błędu w określonej odległości na podstawie analizy pliku z błędami.
