@@ -8,15 +8,15 @@ Stworzyć spellchecker w oparciu o mechanizmy wnioskowania statystycznego
 Opis ćwiczenia:
 ---------------
 
-Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi.
+Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi - np. dla napisu "pics" najbliższym wyrazem ze słownika będzie forma "pies". 
 
 "Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to najczęściej _metryka Levenshteina: http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina zwana także odległością edycyjną.  
 
-Mając mechanizm korekcji błędów, należałoby wprowadzić porządek w wynikach – tzn. wyznaczyć najbardziej prawdopodobną poprawkę.
+Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
 
-argmaxc P(c|w) 
+image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29
 
-Dla poprawki c i wejściowego wyrazu w.
+
 
 Z Twierdzenia Bayesa mamy:
 
@@ -34,3 +34,9 @@ Pozostałe elementy liczymy normalnie
 
 Zliczyć prawdopodobieństwa wystąpienia błędu w określonej odległości na podstawie analizy pliku z błędami.
 Przy zliczaniu frekwencji i kategorii odległości błędów zastosować wygładzanie Laplace'a o wartości 1. 
+
+Materiały:
+----------
+
+- sjp.txt - słownik polskich wyrazów z którego korzysta m.in. aspell
+
