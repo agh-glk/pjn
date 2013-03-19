@@ -14,7 +14,7 @@ Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbli�
 
 Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
 
-image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29
+.. image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29
 
 
 
