@@ -115,7 +115,7 @@ Maksymalna ilość punktów do zdobycia jest zawsze równa liczbie przypadków (
 
 Materiały:
 ----------
-- sjp.txt - słownik polskich wyrazów z którego korzysta m.in. aspell
+- `SJP <http://www.sjp.pl/slownik/odmiany/>`_ - słownik polskich wyrazów (wraz z odmianami fleksyjnymi) z którego korzysta m.in. aspell
 - bledy.txt - plik z błedami służące do wyznaczenia P(w|c)
 - `Milionowy Podkorpus Języka Polskiego <http://nkjp.pl/index.php?page=14&lang=0>`_ który posłuży do wyznaczenia P(c)
 - Dorosz K., Automatyka 2008/1, `Automatyczne sprawdzanie poprawności pisowni w języku polskim oparte na odległości Levenshteina <http://journals.bg.agh.edu.pl/AUTOMATYKA/2008-01/Auto03.pdf>`_
