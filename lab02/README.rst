@@ -10,7 +10,7 @@ Opis ćwiczenia:
 
 Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi - np. dla napisu "pics" najbliższym wyrazem ze słownika będzie forma "pies". 
 
-"Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to najczęściej _metryka Levenshteina: http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina zwana także odległością edycyjną.  
+"Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to najczęściej `metryka Levenshteina <http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina>`_ zwana także odległością edycyjną.  
 
 Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
 
