@@ -3,12 +3,12 @@ Wnioskowanie statystyczne w sprawdzaniu poprawności pisowni
 
 Cel ćwiczenia:
 --------------
-Stworzyć spellchecker w oparciu o mechanizmy wnioskowania statystycznego
+Stworzyć spellchecker w oparciu o mechanizmy wnioskowania statystycznego.
 
 Opis ćwiczenia:
 ---------------
 
-Stworzenie spellchera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi - np. dla napisu "pics" najbliższym wyrazem ze słownika będzie forma "pies". 
+Stworzenie spellcheckera opiera się na znalezieniu elementów ze słownika najbliższych poprawianemu napisowi - np. dla napisu "pics" najbliższym wyrazem ze słownika będzie forma "pies". 
 
 "Bliskość" definiujemy przy pomocy odpowiedniej metryki. W przypadku spellcheckerów jest to 
 najczęściej `metryka Levenshteina <http://pl.wikipedia.org/wiki/Odleg%C5%82o%C5%9B%C4%87_Levenshteina>`_ zwana także odległością edycyjną.  
