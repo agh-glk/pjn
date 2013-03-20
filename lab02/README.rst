@@ -55,7 +55,7 @@ jego prawdopodobieństwo wystąpienia
 
 .. image:: http://latex.codecogs.com/gif.latex?P%28c%29%3D%5Cfrac%7BN_c%7D%7BM%7D
 
-wynosi zatem 0, czyli nigdy nie będzie on nigdy odpowiednim kandydatem do poprawki.
+wynosi zatem 0, czyli nigdy nie będzie on odpowiednim kandydatem do poprawki.
 Aby uniknąć tego typu
 zjawiska zakładamy, że każdy wyraz wystąpił co najmniej raz.
 Aby jednak suma wszystkich P(c) równa wynosiła 1, należy zwiększyć mianownik w w/w ułamku o ilość wszystkich wyrazów,
