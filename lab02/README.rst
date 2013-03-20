@@ -109,7 +109,7 @@ Typowe uruchomienie programu oceniającego wygląda następująco::
   cat mistakes.txt | ./spellchecker | pjn/lab02/spellrank/spellrank.py -f correct.txt
 
 
-Program oceniający posiada także tryb verbose aktywowany przełącznikiem ``-v``.
+W pliku ``correct.txt`` powinny znajdować się w odpowiadających liniach poprawne formy, które były oczekiwane jako poprawa błędu z pliku ``mistakes.txt``. Program oceniający posiada także tryb verbose aktywowany przełącznikiem ``-v``.
 
 Maksymalna ilość punktów do zdobycia jest zawsze równa liczbie przypadków (linii w pliku testowym). Im więcej punktów uzyska spellchecker tym lepiej.
 
