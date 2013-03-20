@@ -36,7 +36,7 @@ można zapoznać się w `[Dorosz, 2008] <http://journals.bg.agh.edu.pl/AUTOMATYK
 
 * 1/4 – odległość “polonica” czyli żuk ↔ zuk,
 * 1/4 – odległość “błąd ortograficzny rz/ż ó/u ę/en ą/om ch/h” typu żuk ↔ rzuk, mózg ↔ muzg itp. 
-* 1/4 - odległość "pomyłki typograficzne",
+* 1/4 - odległość "pomyłki typograficzne" tj. sąsiednie znaki na klawiaturze,
 * ½ – czeski błąd – zamiana dwu sąsiednich liter miejscami pies ↔ peis
 
 Pozostałe elementy liczymy normalnie.
