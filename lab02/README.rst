@@ -28,7 +28,7 @@ Z Twierdzenia Bayesa mamy:
 
 - P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Nie jest zależny od c – więc nie jest istotny w szacowaniu argmax.
 
-- P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie (tzn. przykładowym zbiorze tekstów).
+- P(c) będzie prawdopodobieństwem wystąpienia danej poprawki (częściej występujące wyrazy w języku będą bardziej prawdopodobnym kandydatem).  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie (tzn. przykładowym zbiorze tekstów).
 
 Jako P(w|c) ustalamy prawdopodobieństwo wystąpienia określonego rodzaju błędu. 
 Ustalmy to prawdopodobieństwo na podstawie prawdopodobieństwa wystąpienia błędu w określonej znormalizowanej odległości Levenstheina. Z typami błędów
