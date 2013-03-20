@@ -26,7 +26,7 @@ Z Twierdzenia Bayesa mamy:
 .. image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29%3Dargmax_c%5Cfrac%7BP%28w%7Cc%29P%28c%29%7D%7BP%28w%29%7D
 
 
-- P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Dla każdego c jest identyczny – więc nie jest potrzebny do szacowania.
+- P(w) będzie prawdopodobieństwem wystąpienia danego napisu. Nie jest zależny od c – więc nie jest istotny w szacowaniu argmax.
 
 - P(c) będzie prawdopodobieństwem wystąpienia danej poprawki.  Do wyznaczenia tego należy skorzystać z analizy frekwencyjnej wyrazów w korpusie (tzn. przykładowym zbiorze tekstów).
 
