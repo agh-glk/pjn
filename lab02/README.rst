@@ -15,7 +15,7 @@ najczęściej `metryka Levenshteina <http://pl.wikipedia.org/wiki/Odleg%C5%82o%C
 
 Wyniki jednak często są niejednoznaczne, należałoby zatem wprowadzić porządek w wynikach – 
 tzn. wyznaczyć wyraz ze słownika stanowiący najbardziej prawdopodobną poprawkę. 
-Formalnie: Dla poprawki (wyrazu ze słowika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
+Formalnie: Dla poprawki (wyrazu ze słownika) "c" i wejściowego wyrazu do poprawy "w" znaleźć: 
 
 .. image:: http://latex.codecogs.com/gif.latex?argmax_cP%28c%7Cw%29
 
