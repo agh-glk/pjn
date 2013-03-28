@@ -47,7 +47,7 @@ if __name__ == "__main__":
         points_total = 0
         for answer in sys.stdin:
             num += 1
-            correct = correct_file.readline().strip()
+            correct = correct_file.readline().strip().decode('utf-8')
             answer = [word.strip().decode('utf-8') for word in answer.split(',') if word.strip()]
             points = typo_weight(answer, correct)
             if options.verbose:
