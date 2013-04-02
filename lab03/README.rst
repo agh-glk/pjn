@@ -1,5 +1,5 @@
-Lab03
-=====
+Metryki tekstowe
+================
 
 Cel ćwiczenia:
 --------------
@@ -28,3 +28,5 @@ Są to metody które dokonują transformacji napisów do mniejszego zbiory - oba
 Innym podejściem jest próba budowy metryk (bądź funkcji które przynajmniej spełniają część założeń metryki) które 
 są relatywnie proste obliczeniowo (np. w stosunku do pełnej metryki edycyjnej).
 
+Taką metryką jest metryka LCS - Longest Common Substring która porównuje dwa napisy na podstawie długości 
+ich najdłuższego wspólnego podciągu, 
