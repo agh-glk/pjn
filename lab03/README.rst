@@ -16,7 +16,7 @@ przekształcenie porównywanych napisów na wartość np. liczbową pozwalając�
 Przykładem takiego mechanizmu jest algorytm fonetyczny 
 `SOUNDEX <http://en.wikipedia.org/wiki/Soundex>`_ obecny w większości baz danych.
 Przekształca on dany napis w kombinację litery i cyfr w celu uproszczenia jego zapisu.
-Został on stworzony na potrzeby spisów powszechnych w Stanach Żjednoczonych jeszcze pod koniec XIX w. w celu
+Został on stworzony na potrzeby spisów powszechnych w Stanach Zjednoczonych jeszcze pod koniec XIX w. w celu
 ułatwienia spisywania obywateli o nazwiskach których pisownia odbiega znacznie od pisowni angielskiej.
 
 Analogicznym algorytmem jest 
@@ -29,4 +29,7 @@ Innym podejściem jest próba budowy metryk (bądź funkcji które przynajmniej 
 są relatywnie proste obliczeniowo (np. w stosunku do pełnej metryki edycyjnej).
 
 Taką metryką jest metryka LCS - Longest Common Substring która porównuje dwa napisy na podstawie długości 
-ich najdłuższego wspólnego podciągu, 
+ich najdłuższego wspólnego podciągu. Dla f(x,y) - funkcji zwracającej najdłuższy wspólny podciąg napisów x i y, 
+to w/w metrykę zdefiniujemy jako:
+
+
