@@ -32,4 +32,5 @@ Taką metryką jest metryka LCS - Longest Common Substring która porównuje dwa
 ich najdłuższego wspólnego podciągu. Dla f(x,y) - funkcji zwracającej najdłuższy wspólny podciąg napisów x i y, 
 to w/w metrykę zdefiniujemy jako:
 
+.. image:: http://latex.codecogs.com/gif.latex?LCSP%28x,y%29=frac%7Blen%28w%7Cc%29P%28c%29%7D%7BP%28w%29%7D
 
