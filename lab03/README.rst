@@ -33,7 +33,7 @@ ich najdłuższego wspólnego podciągu. Dla f(x,y) - funkcji zwracającej najd�
 |x| - długości napisu x
 to w/w metrykę zdefiniujemy jako:
 
-.. image:: http://latex.codecogs.com/gif.latex?LCS(x%2Cy)%3D%5Cfrac%7B%7Cf(x%2Cy)%7C%7D%7Bmax(%7Cx%7C%2C%7Cy%7C)%7D
+.. image:: http://latex.codecogs.com/gif.latex?LCS(x%2Cy)%3D1-%5Cfrac%7B%7Cf(x%2Cy)%7C%7D%7Bmax(%7Cx%7C%2C%7Cy%7C)%7D
 
 Metryka powyższa jest jednak dla pewnych zastosowań zbyt wrażliwa na przestawienia elementów napisu - 
 np. jeśli w adresie przestawimy miejscami miejscowość z ulicą - to nadal będzie to ten sam adres, ale metryka 
@@ -44,12 +44,12 @@ ponieważ warunek trójkąta nie jest spełniony - ale w praktyce możemy tu nad
 Metryki N-gramowe opierają się na badaniu zbioru N-gramów, czyli podciągów o długości N. Jeśli rozbijemy napisy x i y 
 na odpowiadające im N-gramy to możemy porównać te zbiory przy pomocy tzw. współczynnika Dice'a:
 
-.. image:: http://latex.codecogs.com/gif.latex?DICE(x%2Cy)%3D%5C1-frac%7B2%5Ctimes%20%7CNgrams(X)%5Ccap%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%2B%7CNgrams(y)%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?DICE(x%2Cy)%3D1-%5Cfrac%7B2%5Ctimes%20%7CNgrams(X)%5Ccap%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%2B%7CNgrams(y)%7C%7D
 
 Albo też, jeśli traktować zbiory N-gramów jako wektory gdzie indeksami są poszczególne N-gramy, a wartościami współrzędnych 
 krotności wystąpienia N-gramów, możemy wprowadzić tzw. metrykę cosinusową:
 
-.. image:: http://latex.codecogs.com/gif.latex?COSINE(x%2Cy)%3D%5C1-frac%7B%7CNgrams(X)%20%5Ccdot%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%7CNgrams(y)%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?COSINE(x%2Cy)%3D1-%5Cfrac%7B%7CNgrams(X)%20%5Ccdot%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%7CNgrams(y)%7C%7D
 
 Kropka oznacza tu iloczyn skalarny wektorów. Wartość otrzymana stanowi zaś cosinus kąta między wektorami N-gramów (stąd nazwa).
 
