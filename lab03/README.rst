@@ -30,7 +30,8 @@ są relatywnie proste obliczeniowo (np. w stosunku do pełnej metryki edycyjnej)
 
 Taką metryką jest metryka LCS - Longest Common Substring która porównuje dwa napisy na podstawie długości 
 ich najdłuższego wspólnego podciągu. Dla f(x,y) - funkcji zwracającej najdłuższy wspólny podciąg napisów x i y, 
+|x| - długości napisu x
 to w/w metrykę zdefiniujemy jako:
 
-.. image:: http://latex.codecogs.com/gif.latex?LCSP%28x,y%29=frac%7Blen%28w%7Cc%29P%28c%29%7D%7BP%28w%29%7D
+.. image:: http://latex.codecogs.com/gif.latex?LCS(x%2Cy)%3D%5Cfrac%7B%7Cf(x%2Cy)%7C%7D%7Bmax(%7Cx%7C%2C%7Cy%7C)%7D
 
