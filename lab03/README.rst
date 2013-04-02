@@ -63,5 +63,9 @@ Należy w tym celu operować na całej linii jako na 1 napisie, najlepiej po prz
 niealfanumerycznych, usunięciu wyrazów o wysokiej częstości (np. LTD, Z O.O., OOO, 000, LLC, nazwy miast, krajów itp.) i spacji.
 
 Na tak przetworzonych napisach znaleźć najbliżej leżące w określonej metryce - przykładowo:
-- zaczynamy od najkrótszych napisów
-- dla danego napisu wybieramy te napisy które są odległe o nie dalej niż 
+
+- zaczynamy od najkrótszego napisu
+
+- dla danego napisu wybieramy te napisy które są odległe o nie dalej niż ustalone epsilon (np. 0.2) i wiążemy w jeden "cluster"
+
+- powtarzamy w/w operację aż do wyczerpania niesklastrowanych napisów.
