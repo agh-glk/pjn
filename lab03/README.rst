@@ -45,7 +45,7 @@ ponieważ warunek trójkąta nie jest spełniony - ale w praktyce możemy tu nad
 Metryki N-gramowe opierają się na badaniu zbioru N-gramów, czyli podciągów o długości N. Jeśli rozbijemy napisy x i y 
 na odpowiadające im N-gramy to możemy porównać te zbiory przy pomocy tzw. współczynnika Dice'a:
 
-.. image:: http://latex.codecogs.com/gif.latex?DICE(x%2Cy)%3D1-%5Cfrac%7B2%5Ctimes%20%7CNgrams(X)%5Ccap%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%2B%7CNgrams(y)%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?DICE(x%2Cy)%3D1-%5Cfrac%7B2%5Ctimes%20%7CNgrams(x)%5Ccap%20Ngrams(y)%7C%7D%7B%7CNgrams(x)%7C%2B%7CNgrams(y)%7C%7D
 
 Można także dokonać prostego przejścia z reprezentacji za pomocą zbiorów na reprezentacje wektorową. 
 Jeśli przyjmiemy, że w całym tekście znajduje się K wszystkich możliwych różnych N-gramów, to można wyobrazić sobie 
@@ -57,7 +57,7 @@ wartości, np krotność, ważność N-gramu, itp).
 Taka reprezentacja umożliwia nam bardziej precyzyjne mierzenie odległości (podobieństwa) pomiędzy wektorami wyrażonej poprzez 
 tzw. metrykę cosinusową:
 
-.. image:: http://latex.codecogs.com/gif.latex?COSINE(x%2Cy)%3D1-%5Cfrac%7B%7CNgrams(X)%20%5Ccdot%20Ngrams(y)%7C%7D%7B%7CNgrams(X)%7C%7CNgrams(y)%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?COSINE(x%2Cy)%3D1-%5Cfrac%7B%7CNgrams(x)%20%5Ccdot%20Ngrams(y)%7C%7D%7B%7CNgrams(x)%7C%7CNgrams(y)%7C%7D
 
 Kropka oznacza tu iloczyn skalarny wektorów. Wartość otrzymana stanowi zaś cosinus kąta między wektorami 
 N-gramów (stąd nazwa). 
