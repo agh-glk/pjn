@@ -165,7 +165,8 @@ obu czynników precyzji i pełności wspólnie (z wartości czynników osobno ci
 ogólnej jakości). Bardzo często natomiast potrzebujemy posługiwać się pojedynczą wartością (tak jak w przypadku 
 programu oceniającego ``rank.py``, chcemy mieć jedną wartość liczbową od 0 do 1, która powie jaką jakość ma dany 
 program klasteryzujący względem przykładu wzorcowego). W takiej sytuacji można posiadając precyzję i pełność 
-łatwo policzyć miarę F-measure::
+łatwo policzyć miarę F-measure:
+
 
 .. image:: http://upload.wikimedia.org/math/9/9/1/991d55cc29b4867c88c6c22d438265f9.png
 
