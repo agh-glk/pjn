@@ -141,14 +141,34 @@ na podstawie zbioru wygenerowanego przez program oraz zbioru odczytanego z pliku
 dla tego napisu liczona jest miara F-measure, będąca po prostu średnią harmoniczną miar precyzji i pełności.
 
 Jesli przyjmiemy, że program zaklasyfikował dany napis (linię) do zbioru A, a w pliku wzorcowym został on 
-zaklasyfikowany do zbioru B, to pojęcia precyzji i pełności względem zbiorów A i B definiujemy następująco:
+zaklasyfikowany do zbioru B, to pojęcia precyzji i pełności względem zbiorów A i B definiujemy następująco. 
 
-.. image:: http://latex.codecogs.com/gif.latex?precision=\frac{|A\cap&space;B|}{|\overline{A}|}
+Precyzja:
+
+
+.. image:: http://latex.codecogs.com/gif.latex?precision=\frac{|A\cap&space;B|}{|\overline{A}|} 
+
+
+Pełność:
 
 
 .. image:: http://latex.codecogs.com/gif.latex?recall=\frac{|A\cap&space;B|}{|\overline{B}|}
 
 
+
 Innymi słowy precyzja określa jak duży procent napisów zklasyfikowanych do A było poprawnie zklasyfikowanych, 
 a pełność określa jak duży jest procent poprawnie zklasyfikowanych napisów przez program względem wszystkich poprawnych
 napisów w zbiorze wzorcowym B.
+
+Miara precision-recall daje dobrą orientacje na temat jakości danej metody, natomiast konieczne jest analizowanie
+obu czynników precyzji i pełności wspólnie (z wartości czynników osobno ciężko wysnuć jakiekolwiek wnioski na temat 
+ogólnej jakości). Bardzo często natomiast potrzebujemy posługiwać się pojedynczą wartością (tak jak w przypadku 
+programu oceniającego ``rank.py``, chcemy mieć jedną wartość liczbową od 0 do 1, która powie jaką jakość ma dany 
+program klasteryzujący względem przykładu wzorcowego). W takiej sytuacji można posiadając precyzję i pełność 
+łatwo policzyć miarę F-measure::
+
+.. image:: http://upload.wikimedia.org/math/9/9/1/991d55cc29b4867c88c6c22d438265f9.png
+
+
+Program ``rank.py`` liczy F-measure dla każdego pojedynczego przykładu, a następnie wylicza średnią arytmetyczną
+z wszystkich tak otrzymanych miar.
