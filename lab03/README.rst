@@ -156,8 +156,8 @@ Pełność:
 
 
 
-Innymi słowy precyzja określa jak duży procent napisów zklasyfikowanych do A było poprawnie zklasyfikowanych, 
-a pełność określa jak duży jest procent poprawnie zklasyfikowanych napisów przez program względem wszystkich poprawnych
+Innymi słowy precyzja określa jak duży procent napisów zaklasyfikowanych do A było poprawnie zaklasyfikowanych, 
+a pełność określa jak duży jest procent poprawnie zaklasyfikowanych napisów przez program względem wszystkich poprawnych
 napisów w zbiorze wzorcowym B.
 
 Miara precision-recall daje dobrą orientacje na temat jakości danej metody, natomiast konieczne jest analizowanie
