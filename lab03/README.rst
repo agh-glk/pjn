@@ -49,7 +49,7 @@ na odpowiadające im N-gramy to możemy porównać te zbiory przy pomocy tzw. ws
 
 Można także dokonać prostego przejścia z reprezentacji za pomocą zbiorów na reprezentacje wektorową. 
 Jeśli przyjmiemy, że w całym tekście znajduje się K wszystkich możliwych różnych N-gramów, to można wyobrazić sobie 
-wektor o długości K, w którym każda współrzędna odpowiada jednemu z N-gramów. Następnie każdy dowolny napis 
+wektor o wymiarze K, w którym każda współrzędna odpowiada jednemu z N-gramów. Następnie każdy dowolny napis 
 (zbiór N-gramów) można zareprezentować wektorowo w taki sposób, że wszystkie współrzędne wektora 
 odpowiadające tym N-gramom napisu posiadają wartość 1 a pozostałe wartość 0 (zamiast 1 można użyć także innych
 wartości, np krotność, ważność N-gramu, itp). 
