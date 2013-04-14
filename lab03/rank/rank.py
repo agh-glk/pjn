@@ -40,8 +40,8 @@ if __name__ == "__main__":
     answer = read_sets_from_input(sys.stdin)
 
     results = []
-    for line in answer:
-        if not norm.has_key(line):
+    for line in norm:
+        if not answer.has_key(line):
             results.append(0)
         else:
             results.append(f1(norm[line], answer[line]))
