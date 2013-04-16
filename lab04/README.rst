@@ -57,4 +57,4 @@ Materiały
 
 * C.D.Manning, H.Schutze, "Foundations of Statistical Natural Language Processing"
 * J.Sambor, „Słowa i liczby. Zagadnienia językoznawstwa statystycznego”, PAN, 1972
-* PLP
+* `PLP <https://github.com/agh-glk/plp>`_
