@@ -27,7 +27,7 @@ pozycji 150. Zatem jeśli ``f`` określa częstotliwość, a ``r`` pozycję w ra
 taka że:
 
 
-.. image:: http://latex.codecogs.com/gif.latex?f=\frac{k}{r}
+.. image:: http://latex.codecogs.com/gif.latex?f\cong\frac{k}{r}
 
 
 Prawo Zipfa oddaje pewien charakter statystyczny wielu problemów związanych z modelowaniem zachowań ludzkich (np. działa także w stosunku do ilości i wielkości miast wyrażonej w liczbie mieszkańców, i wiele innych...) natomiast
