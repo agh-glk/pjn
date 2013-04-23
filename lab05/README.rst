@@ -36,9 +36,14 @@ Plan ćwiczenia
 napis który należy dokleić aby otrzymać formę podstawową). Na przykład domem -> ("em",""), psem -> ("sem","ies")
 * Dla badanego wyrazu odnaleźć formę(formy) w słowniku których wspólny podciąg dopasowany od tyłu jest najdłuższy
 * W przypadku gdy otrzymamy kilka takich form, wybrać te którym odpowiada najliczniejszy zbiór identycznych przekształceń.
-Przykład - powiedzmy że stemujemy wyraz spoza słownika "zazazem". Jeśli najbardziem dopasowane będą formy  
-domem -> ("em",""), psem -> ("sem","ies"), kotem -> ("em","") to dla stemmingu "zazazem" wybierzemy przekształcenie 
-("em","") jako najczęściej występujące.
+
+Przykład - powiedzmy że stemujemy wyraz spoza słownika "zazazem". 
+
+Jeśli najbardziem dopasowane będą formy  
+* domem -> ("em",""), 
+* psem -> ("sem","ies"), 
+* kotem -> ("em","") 
+to dla stemmingu "zazazem" wybierzemy przekształcenie ("em","") jako najczęściej występujące.
 
 Materiały
 ---------
