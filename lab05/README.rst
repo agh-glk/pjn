@@ -42,9 +42,11 @@ Na przykład: domem -> ("em",""), psem -> ("sem","ies")
 Przykład - powiedzmy że stemujemy wyraz spoza słownika "zazazem". 
 
 Jeśli najbardziem dopasowane będą formy  
+
 * domem -> ("em",""), 
 * psem -> ("sem","ies"), 
 * kotem -> ("em","") 
+
 to dla stemmingu "zazazem" wybierzemy przekształcenie ("em","") jako najczęściej występujące.
 
 Materiały
