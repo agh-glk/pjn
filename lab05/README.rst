@@ -32,8 +32,11 @@ Plan ćwiczenia
 --------------
 
 * Zbudować na podstawie CLP słownik 'a tergo' (od tyłu - spis wyrazów ułożony w kolejności alfabetycznej liter liczonych od końca).
-* Rozpiąć dany słownik na strukturze trie w postaci forma -> (napis który należy odciąć aby uzyskać formę podstawową, 
-napis który należy dokleić aby otrzymać formę podstawową). Na przykład domem -> ("em",""), psem -> ("sem","ies")
+
+* Rozpiąć dany słownik na strukturze trie w postaci forma -> 
+(napis który należy odciąć aby uzyskać formę podstawową, napis który należy dokleić aby otrzymać formę podstawową). 
+Na przykład: domem -> ("em",""), psem -> ("sem","ies")
+
 * Dla badanego wyrazu odnaleźć formę(formy) w słowniku których wspólny podciąg dopasowany od tyłu jest najdłuższy
 * W przypadku gdy otrzymamy kilka takich form, wybrać te którym odpowiada najliczniejszy zbiór identycznych przekształceń.
 
