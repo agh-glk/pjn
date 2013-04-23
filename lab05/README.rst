@@ -49,6 +49,9 @@ Jeśli najbardziem dopasowane będą formy
 
 to dla stemmingu "zazazem" wybierzemy przekształcenie ("em","") jako najczęściej występujące.
 
+* Dla oceny skuteczności stemowania, skorzystać z pliku test.txt zawierającego pary forma wyrazu,forma podstawowa.
+
+
 Materiały
 ---------
 
