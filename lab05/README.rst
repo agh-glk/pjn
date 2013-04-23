@@ -1,5 +1,5 @@
-Naiwny Stemmer
-==============
+Stemmer Słownikowy
+==================
 
 Cel ćwiczenia:
 --------------
