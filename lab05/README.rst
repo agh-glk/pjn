@@ -17,6 +17,14 @@ formy w tekście odpowiadają danemu wyrazowi, należy poddać tekst procesowi s
 do formy podstawowej danego wyrazu (np. dla czasownika będzie to bezokolicznik, 
 dla rzeczownika mianownik liczby pojedynczej itd.)
 
+Jednym z pierwszych algorytmów stemmingu był zaproponowany przez Martina Portera w 1980r. algorytm dla j.angielskiego.
+Ten algorytm sprowadzał się do kilkunastu prostych reguł przekształcania napisów. Na przykład: dla form imiesłowowych 
+kończących się na -ed algorytm obcinał tą końcówkę sprowadzając przykładowo formę "looked" 
+do formy bezokolicznikowej "look". 
+
+Zbudowanie jednak takich reguł dla języka polskiego byłoby bardzo żmudne - dlatego do ich budowy posłużymy się słownikiem
+fleksyjnym.
+
 Plan ćwiczenia
 --------------
 
@@ -25,3 +33,4 @@ Materiały
 ---------
 
 * `PLP <https://github.com/agh-glk/plp>`_
+* `Stemmer Portera <http://snowball.tartarus.org/algorithms/porter/stemmer.html>`_ 
