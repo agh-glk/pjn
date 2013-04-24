@@ -57,3 +57,4 @@ Materiały
 
 * `PLP <https://github.com/agh-glk/plp>`_
 * `Stemmer Portera <http://snowball.tartarus.org/algorithms/porter/stemmer.html>`_ 
+* `marisa trie <https://github.com/kmike/marisa-trie>`_
