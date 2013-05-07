@@ -22,15 +22,24 @@ Możemy próbować określać prawdopodobieństwo wystąpień poszczególnych li
 
 Aby obliczyć P(w1:n) możemy wykorzystać regułę łańcuchową, wtedy:
 
+.. image:: http://latex.codecogs.com/gif.latex?P(w_1_:_n)=P(w_1_:_n_-_1)P(w_n|w_1_:_n_-_1)=P(w_1_:_n_-_2)P(w_n_-_1|w_1_:_n_-_2)P(w_n|w_1_:_n_-_1)=%20itd.%20=%20P(w_1)P(w_2|w_1)P(w3|w_1_:_2)P(w_4|w_1_:_3)%20...%20P(w_n_-_1|w_1_:_n_-_2)P(w_n|w_1_:_n_-_1)
+
+
 Problem – w korpusie będzie prawdopodobnie bardzo mało wystąpień w1:n-1
 
 Możemy potraktować generację słów składających się na zdanie jako proces Markowa i przyjąć założenie
 Markowa - tylko N najbliższych słów ma wpływ na to jakie będzie wn :
 
+.. image:: http://latex.codecogs.com/gif.latex?P(w_n|w_1_:_n_-_1)%20\approx%20P(w_n|w_n_-_N_+_1_:_n_-_1)
 
 Bigram: bierzemy pod uwagę tylko poprzednie słowo
 Trigram: bierzemy pod uwagę dwa poprzedzające słowa
 Tetragram: ... cztery itd.
+
+Wtedy:
+
+.. image:: http://latex.codecogs.com/gif.latex?P(w_1_:_n)%20\approx%20\prod_{k=1,n}%20P(w_k|w_{k-N+1:%20k-1})
+
 
 Przykłady zastosowań:
 
