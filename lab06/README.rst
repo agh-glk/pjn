@@ -14,7 +14,7 @@ Opis ćwiczenia
 
 Zakładamy, że model probablistyczny języka, pozwalający obliczyć prawdopodobieństwo zdania
 
-* Jeśli w1:n oznacza ciąg wyrazów w1, w2, ... , w3
+* Jeśli w1:n oznacza ciąg wyrazów w1, w2, ... , wn
 * Jaka jest wartość P(w1:n)
 
 Możemy próbować określać prawdopodobieństwo wystąpień poszczególnych liter albo wyrazów.
