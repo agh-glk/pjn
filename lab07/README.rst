@@ -35,3 +35,11 @@ Z pierwszym problem radzimy sobie zazwyczaj w następujący sposób:
 
 * W słowniku przechowywujemy jedynie wyrazy które występują w więcej niż 1 tekście
 * Usuwamy wyrazy które występują w więcej niż 70% tekstów
+* W macierzy A której wiersze reprezentują teksty a kolumny wyrazy, wartość w danej komórce zawiera wagę danego wyrazu w danym tekście. 
+
+Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną jest metryka TF-IDF 
+(Term Frequency - Inverted Document Frequency).
+
+.. image:: http://latex.codecogs.com/gif.latex?TF-IDF(t_ij)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C{t_i%7C%7Ct_j%7C%7D
+
+
