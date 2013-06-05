@@ -43,6 +43,8 @@ jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF okre
 
 .. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C%5C{d:t%5Cin%20d%5C}%7C%7D
 
+Dla D - zbioru wszystkich dokumentów.
+
 TF-IDF(t,d) określamy jako TF-IDF(t,d)=TF(t,d)*IDF(t).
 
 Te zmiany jednak nadal pozostawiają nas w obrębie porównywania _dokładnej_ zgodności wyrazów.
