@@ -28,7 +28,8 @@ Można następnie porównać dwa teksty w postaci wektorowej korzystając już z
 
 Takie podejście ma pewne wady, a mianowicie:
 
-* Wyrazy bardzo często występujące we wszystkich tekstach, bądź występujące tylko w 1 tekście nie niosą z sobą informacji a mają mocny wpływ na podobieństwo (patrz: prawo Zipfa)
+* Wyrazy bardzo często występujące we wszystkich tekstach nie niosą z sobą informacji, a mają mocny wpływ na pozorne podobieństwo 
+* Wyrazy występujące tylko w 1 tekście niosą z sobą dużo informacji (patrz: prawo Zipfa), ale nie mają dużego wpływu na podobieństwo
 * Zgodność tekstów sprowadza się do dokładnej zgodności wyrazów
 
 Z pierwszym problem radzimy sobie zazwyczaj w następujący sposób:
