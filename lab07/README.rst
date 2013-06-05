@@ -70,7 +70,7 @@ Taka reprezentacja nie dość, że jest znacznie bardziej oszczędna (l' jest za
 dla wyszukiwania podobnych treści jest znacznie skuteczniejsza (usuwa "szum").
 
 Metoda ta, znana jako Latent Semantic Analysis ma pewną jednak wadę - koncepty jako wektory nie mają "ludzkiej" interpretacji
-ze względu na choćby zawarte wartości ujemne. Często stosuje się zatem dla modelowania tematów metody które nie mają
+ze względu na choćby zawarte w nich wartości ujemne. Często stosuje się zatem dla modelowania tematów metody które nie mają
 tej wady, nawet kosztem utraty dokładności reprezentacji. Takim modelem jest np. Latent Dirichlet Allocation (LDA).
 
 Zadanie:
