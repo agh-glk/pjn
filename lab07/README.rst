@@ -52,13 +52,19 @@ na wektory własne
 
 .. image:: http://latex.codecogs.com/gif.latex?A%3D%20U%20%5CSigma%20V^%5Ctop
 
-Gdzie macierz U o wymiarach n x l jest macierzą pojęć przedstawionych w nowym układzie współrzędnych a V o wymiarach m x l analogiczną macierzą wyrazów. Środkowa macierz
-sigma jest macierzą przekątniową l wartości własnych.
+Gdzie macierz U o wymiarach n x l jest macierzą pojęć (term) przedstawionych w nowym układzie współrzędnych a V o wymiarach m x l analogiczną macierzą wyrazów. Środkowa macierz
+sigma jest macierzą przekątniową l wartości własnych. Nowy układ współrzędnych 
 
 Taką reprezentację można przekształcić do postaci przybliżonej
 
 .. image:: http://latex.codecogs.com/gif.latex?A'%3D%20U'%20%5CSigma'%20V'^%5Ctop
 
-Gdzie macierz U o wymiarach n x l', V o wymiarach m x l' wybierając jedynie l' największych wartości własnych.
+Tworzymy macierze U' o wymiarach n x l', V' o wymiarach m x l' wybierając jedynie l' największych wartości własnych.
+
+Można teraz poszukiwać podobieństw tekstu korzystając z metryki cosinusowej, ale w odniesieniu do wektorów w nowej przestrzeni.
+
+Taka reprezentacja nie dość, że jest znacznie bardziej oszczędna (l' jest zazwyczaj rzędu setek), to okazuje się, że 
+dla wyszukiwania podobnych treści jest znacznie skuteczniejsza (usuwa "szum").
+
 
 
