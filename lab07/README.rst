@@ -60,7 +60,7 @@ Taką reprezentację można przekształcić do postaci przybliżonej
 
 .. image:: http://latex.codecogs.com/gif.latex?A'%3D%20U'%20%5CSigma'%20V'^%5Ctop
 
-Tworzymy macierze U' o wymiarach n x l', V' o wymiarach m x l' wybierając jedynie l' największych wartości własnych.
+Tworzymy macierze U' o wymiarach n x l', V' o wymiarach m x l' wybierając jedynie l' (l' << n) największych wartości własnych.
 
 Można teraz poszukiwać podobieństw tekstu korzystając z metryki cosinusowej, ale w odniesieniu do wektorów w nowej przestrzeni.
 
@@ -68,8 +68,8 @@ Taka reprezentacja nie dość, że jest znacznie bardziej oszczędna (l' jest za
 dla wyszukiwania podobnych treści jest znacznie skuteczniejsza (usuwa "szum").
 
 Metoda ta, znana jako Latent Semantic Analysis ma pewną jednak wadę - koncepty jako wektory nie mają "ludzkiej" interpretacji
-ze względu na choćby zawarte wartości ujemne. Często stosuje się zatem dla modelowania tematów metod które nie mają
-tej wady, nawet kosztem dokładności tej reprezentacji. Taki modelem jest np. Latent Dirichlet Allocation.
+ze względu na choćby zawarte wartości ujemne. Często stosuje się zatem dla modelowania tematów metody które nie mają
+tej wady, nawet kosztem utraty dokładności reprezentacji. Takim modelem jest np. Latent Dirichlet Allocation (LDA).
 
 Zadanie:
 --------
