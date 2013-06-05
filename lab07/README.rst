@@ -47,9 +47,18 @@ TF-IDF(t,d) określamy jako TF-IDF(t,d)=TF(t,d)*IDF(t).
 
 Te zmiany jednak nadal pozostawiają nas w obrębie porównywania _dokładnej_ zgodności wyrazów.
 
-W celu uogólnienie podejścia, dokonuję się często przekształcenia oryginalnej macierzy term-document A dokonując jej rozkładu 
+W celu uogólnienie podejścia, dokonuję się często przekształcenia oryginalnej macierzy term-document A o wymiarach n x m dokonując jej rozkładu 
 na wektory własne
 
 .. image:: http://latex.codecogs.com/gif.latex?A%3D%20U%20%5CSigma%20V^%5Ctop
+
+Gdzie macierz U o wymiarach n x l jest macierzą pojęć przedstawionych w nowym układzie współrzędnych a V o wymiarach m x l analogiczną macierzą wyrazów. Środkowa macierz
+sigma jest macierzą przekątniową l wartości własnych.
+
+Taką reprezentację można przekształcić do postaci przybliżonej
+
+.. image:: http://latex.codecogs.com/gif.latex?A'%3D%20U'%20%5CSigma'%20V'^%5Ctop
+
+Gdzie macierz U o wymiarach n x l', V o wymiarach m x l' wybierając jedynie l' największych wartości własnych.
 
 
