@@ -53,7 +53,8 @@ na wektory własne
 .. image:: http://latex.codecogs.com/gif.latex?A%3D%20U%20%5CSigma%20V^%5Ctop
 
 Gdzie macierz U o wymiarach n x l jest macierzą pojęć (term) przedstawionych w nowym układzie współrzędnych a V o wymiarach m x l analogiczną macierzą wyrazów. Środkowa macierz
-sigma jest macierzą przekątniową l wartości własnych. Nowy układ współrzędnych 
+sigma jest macierzą przekątniową l wartości własnych. Wymiary nowego układ współrzędnych wyznaczonych przez wektory własne nosi nazwę
+_concepts_ albo ogólniej _topics_.
 
 Taką reprezentację można przekształcić do postaci przybliżonej
 
@@ -65,6 +66,28 @@ Można teraz poszukiwać podobieństw tekstu korzystając z metryki cosinusowej,
 
 Taka reprezentacja nie dość, że jest znacznie bardziej oszczędna (l' jest zazwyczaj rzędu setek), to okazuje się, że 
 dla wyszukiwania podobnych treści jest znacznie skuteczniejsza (usuwa "szum").
+
+Metoda ta, znana jako Latent Semantic Analysis ma pewną jednak wadę - koncepty jako wektory nie mają "ludzkiej" interpretacji
+ze względu na choćby zawarte wartości ujemne. Często stosuje się zatem dla modelowania tematów metod które nie mają
+tej wady, nawet kosztem dokładności tej reprezentacji. Taki modelem jest np. Latent Dirichlet Allocation.
+
+Zadanie:
+--------
+
+1. Przedstawić zbiór notatek PAP w postaci modelu Bag Of Words po sprowadzeniu do form podstawowych korzystając ze
+stemmera słownikowego
+
+2. Zbudować model LSA i LDA korzystając np. z pakietu gensim 
+(tutorial : http://radimrehurek.com/gensim/tutorial.html zawiera praktycznie całość zadania z wyjątkiem dostarczenia 
+danych wejściowych)
+
+3. Napisać program który dla danej notatki PAP przedstawi dla niej N najbardziej zbliżonych tematów, wypisze jej
+najistotniejsze "topici" w modelu LSA i LDA.
+
+Notatki PAP znajdują się na wierzbie na ścieżce /usr/local/teksty/polskie_iso/wspolczesne/Prasa/pap-all.not
+
+
+
 
 
 
