@@ -83,7 +83,7 @@ stemmera słownikowego
 (tutorial : http://radimrehurek.com/gensim/tutorial.html zawiera praktycznie całość zadania z wyjątkiem dostarczenia 
 danych wejściowych)
 
-3. Napisać program który dla danej notatki PAP przedstawi dla niej N najbardziej zbliżonych tematów, wypisze jej
+3. Napisać program który dla danej notatki PAP przedstawi dla niej N najbardziej zbliżonych tematycznie notatki, wypisze jej
 najistotniejsze "topici" w modelu LSA i LDA.
 
 Notatki PAP znajdują się na wierzbie na ścieżce /usr/local/teksty/polskie_iso/wspolczesne/Prasa/pap-all.not
