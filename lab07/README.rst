@@ -41,6 +41,6 @@ Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną jest me
 (Term Frequency - Inverted Document Frequency) powstała przez iloczyn składnika TF i IDF. Jako TF można ustalić tf(t,d) = 1
 jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF określa "rzadkość" danego wyrazu:
 
-.. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7D:%20t%5Cin%2D0%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7D:t%5Cin%20D%7C%7D
 
 
