@@ -43,4 +43,13 @@ jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF okre
 
 .. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C%5C{d:t%5Cin%20d%5C}%7C%7D
 
+TF-IDF(t,d) określamy jako TF-IDF(t,d)=TF(t,d)*IDF(t).
+
+Te zmiany jednak nadal pozostawiają nas w obrębie porównywania _dokładnej_ zgodności wyrazów.
+
+W celu uogólnienie podejścia, dokonuję się często przekształcenia oryginalnej macierzy term-document A dokonując jej rozkładu 
+na wektory własne
+
+.. image:: http://latex.codecogs.com/gif.latex?A%3D%20U%20%5CSigma%20V^%5Ctop
+
 
