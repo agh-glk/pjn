@@ -38,8 +38,9 @@ Z pierwszym problem radzimy sobie zazwyczaj w następujący sposób:
 * W macierzy A której wiersze reprezentują teksty a kolumny wyrazy, wartość w danej komórce zawiera wagę danego wyrazu w danym tekście. 
 
 Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną jest metryka TF-IDF 
-(Term Frequency - Inverted Document Frequency).
+(Term Frequency - Inverted Document Frequency) powstała przez iloczyn składnika TF i IDF. Jako TF można ustalić tf(t,d) = 1
+jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF określa "rzadkość" danego wyrazu:
 
-.. image:: http://latex.codecogs.com/gif.latex?TF-IDF(t_ij)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C{t_i%7C%7Ct_j%7C%7D
+.. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7D:%20t%5Cin%2D0%7C%7D
 
 
