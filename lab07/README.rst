@@ -5,7 +5,7 @@ Cel ćwiczenia
 -------------
 
 Celem ćwiczenia jest zapoznanie się z podstawowymi metodami wektorowego przetwarzania tekstu, a 
-w szczególności z mechanizmem Latent Semantic Analysis
+w szczególności z mechanizmem Latent Semantic Analysis.
 
 
 
@@ -91,6 +91,9 @@ Notatki PAP znajdują się na wierzbie na ścieżce /usr/local/teksty/polskie_is
 
 
 
+Materiały:
+----------
 
+* `Handbook of Latent Semantic Analysis <http://books.google.pl/books?id=JbzCzPvzpmQC&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=twopage&q&f=false>`_
 
 
