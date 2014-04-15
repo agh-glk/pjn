@@ -3,7 +3,7 @@ Metryki tekstowe
 
 Cel ćwiczenia:
 --------------
-Stworzyć jest stworzyć metodę używającą ansamble dowolnych metryk tekstowych w celu dokonania klasteryzacji zbioru napisów.
+Celem ćwiczenia jest stworzyć metodę używającą ansamble dowolnych metryk tekstowych w celu dokonania klasteryzacji zbioru napisów.
 
 Opis ćwiczenia:
 ---------------
