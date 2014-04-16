@@ -92,7 +92,7 @@ mieć następujące działanie:
 Można stosować dowolną liczbę podejść, łączyć je w ansambl w celu uzyskania polepszenia uzyskanego wyniku.
 
 
-Plik do testowania znajduje się na serwerze wierzba:/usr/local/pjn/lines.txt
+Plik do testowania znajduje się na serwerze wierzba:/usr/local/pjn/lab03/lines.txt
 
 
 Wejście i wyjście programu
