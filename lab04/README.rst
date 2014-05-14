@@ -48,7 +48,7 @@ Na serwerze wierzba dostępna jest biblioteka CLP (w postaci biblioteki *.so) wr
 1. Policzyć częstotliwości wystepowania wyrazów w pliku tekstowym (w j. polskim).
 2. Wyznaczyć granicę, idąc od najrzadziej występujących słów, w momencie gdy zostało już opisane 50% wyrazów w tekście.
 3. Wyznaczyć stałą ``k`` z prawa Zipfa dla tego tekstu. Można zastosować metodę najmniejszych kwadratów do sfitowania
-w/w funkcji hiperbolicznej. Zaprezentowaćwyniki na wykresie.
+w/w funkcji hiperbolicznej. Zaprezentować wyniki na wykresie.
 4. Wyestymować parametry ``B``, ``d`` i ``P`` uściślenia Mandelbrota. Zaprezentować na wykresie.
 5. Czynności 3 oraz 4 powtórzyć na losowo wygenerowanym tekście.
 
