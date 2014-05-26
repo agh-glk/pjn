@@ -14,9 +14,7 @@ które można by określić mianem zasady Pareto w lingwistyce. Postulował on, 
 wyrazu w tekście jest odwrotnie proporcjonalna do numeru rankingu powstałego przez uporządkowanie wyrazów względem
 ich częstości występowania. 
 
-
-
-.. image:: http://home.agh.edu.pl/~korzycki/zipf.png
+.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Moby_Dick_Words.gif/628px-Moby_Dick_Words.gif
 
 
 Przykład::
@@ -44,6 +42,10 @@ Dokładniej, dla pewnych stałych ``B``, ``d``, ``P`` relacja między ``r`` a ``
 
 .. image:: http://latex.codecogs.com/gif.latex?log(f)=log(P)-B\cdot%20log(r+d)
 
+
+.. image:: http://home.agh.edu.pl/~korzycki/zipf.png
+
+
 Plan ćwiczenia
 --------------
 
@@ -57,13 +59,8 @@ Zadaniem samodzielnym będzie:
 2b. Stworzenie listy zawierającej krotność wystąpienia pierwiastka długości wyrazów w wybranych tekstach. Posortowanie tej listy wg w/w krotności.
 3.  Stworzenie wykresów dla poszczególnych języków gdzie na osi rzędnych znajdzie się w/w krotność, na osi odciętych pozycja na w/w list.
 4. Sfitowanie przy pomocy wybranego narzędzia do w/w danych funkcji wynikającej z prawa Zipfa oraz poprawki Mandelbrota.
-5. Zliczenie elementów mogących zostać uznanych jak Hapax Legomena. Zidentyfikowanie ranków wyrazów które obejmują 50% tekstu.
-1. Policzyć częstotliwości wystepowania wyrazów w pliku tekstowym (w j. polskim).
-2. Wyznaczyć granicę, idąc od najrzadziej występujących słów, w momencie gdy zostało już opisane 50% wyrazów w tekście.
-3. Wyznaczyć stałą ``k`` z prawa Zipfa dla tego tekstu. Można zastosować metodę najmniejszych kwadratów d osfitowania
-w/w funkcji hiperbolicznej. Zaprezentowaćwyniki na wykresie.
-4. Wyestymować parametry ``B``, ``d`` i ``P`` uściślenia Mandelbrota. Zaprezentować na wykresie.
-5. Czynności 3 oraz 4 powtórzyć na losowo wygenerowanym tekście.
+5. Zliczenie elementów mogących zostać uznanych za Hapax Legomena. Zidentyfikowanie ranków wyrazów które obejmują 50% tekstu.
+6. Czynności powtórzyć na losowo wygenerowanym tekście.
 
 Materiały
 ---------
