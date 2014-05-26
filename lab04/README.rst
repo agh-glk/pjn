@@ -14,8 +14,14 @@ które można by określić mianem zasady Pareto w lingwistyce. Postulował on, 
 wyrazu w tekście jest odwrotnie proporcjonalna do numeru rankingu powstałego przez uporządkowanie wyrazów względem
 ich częstości występowania. 
 
+.. image:: http://home.agh.edu.pl/~korzycki/freq.png
+
+Wynika z tego, że wyrazy które występują często obejmują woe
+
+
 .. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Moby_Dick_Words.gif/628px-Moby_Dick_Words.gif
 
+.gif
 
 Przykład::
 
