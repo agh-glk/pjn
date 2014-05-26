@@ -18,11 +18,14 @@ ich częstości występowania.
 .. image:: http://home.agh.edu.pl/~korzycki/freq.png
 
 
-Wynika z tego, że wyrazy które występują często obejmują woe
+Wynika z tego, że wyrazy które występują często obejmują objętościowo większość tekstu. 
 
 
 .. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Moby_Dick_Words.gif/628px-Moby_Dick_Words.gif
 
+Ponieważ najliczniejsze wyrazy są wspólne dla większości tekstów, to okazuje się, że znaczenie tekstu zawarte jest w wyrazach najrzadszych.
+Wiele wyrazów występuje też w tekście, z konieczności, tylko raz. Określane są one w językoznastwie jako hapax legomena (poj. hapax legomenon) 
+- z greckiego "raz powiedziane".
 
 
 Przykład::
