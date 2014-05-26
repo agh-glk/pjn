@@ -12,7 +12,14 @@ Opis ćwiczenia:
 Zipf w swojej książce "Human Behavior and the Principle of Least Effort" zamieścił prawo,
 które można by określić mianem zasady Pareto w lingwistyce. Postulował on, że częstotliwość występowania
 wyrazu w tekście jest odwrotnie proporcjonalna do numeru rankingu powstałego przez uporządkowanie wyrazów względem
-ich częstości występowania. Przykład::
+ich częstości występowania. 
+
+
+
+.. image:: http://home.agh.edu.pl/~korzycki/zipf.png
+
+
+Przykład::
 
     .--------------------|----------------------.
     | częstotliwość      |  205 |  115 |     56 |
@@ -43,8 +50,14 @@ Plan ćwiczenia
 W celu uzyskania lepszej jakości w rozpoznawaniu wyrazów należy użyć słownika fleksyjnego dla języka polskiego.
 Każdy napis z tekstu należy spróbować rozpoznać jako formę fleksyjną w słowniku fleksyjnych, i następnie przetwarzać już tylko formę bazową tego wyrazu.
 
-Na serwerze wierzba dostępna jest biblioteka CLP (w postaci biblioteki *.so) wraz z wrapperem PLP w języku Python.
+Zadaniem samodzielnym będzie:
 
+1.  Zebranie samodzielne wybranych tekstów z wybranych języków (np. polski, angielski, esperanto)  z korpusu dostępnego ma serwerze dydaktycznym. Przeprowadzenie w miarę możliwości stemmingu w/w tekstów.
+2a. Stworzenie listy zawierającej krotność wystąpienia poszczególnych wyrazów w wybranych tekstach. Posortowanie tej listy wg w/w krotności.
+2b. Stworzenie listy zawierającej krotność wystąpienia pierwiastka długości wyrazów w wybranych tekstach. Posortowanie tej listy wg w/w krotności.
+3.  Stworzenie wykresów dla poszczególnych języków gdzie na osi rzędnych znajdzie się w/w krotność, na osi odciętych pozycja na w/w list.
+4. Sfitowanie przy pomocy wybranego narzędzia do w/w danych funkcji wynikającej z prawa Zipfa oraz poprawki Mandelbrota.
+5. Zliczenie elementów mogących zostać uznanych jak Hapax Legomena. Zidentyfikowanie ranków wyrazów które obejmują 50% tekstu.
 1. Policzyć częstotliwości wystepowania wyrazów w pliku tekstowym (w j. polskim).
 2. Wyznaczyć granicę, idąc od najrzadziej występujących słów, w momencie gdy zostało już opisane 50% wyrazów w tekście.
 3. Wyznaczyć stałą ``k`` z prawa Zipfa dla tego tekstu. Można zastosować metodę najmniejszych kwadratów d osfitowania
