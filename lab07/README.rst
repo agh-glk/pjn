@@ -1,4 +1,4 @@
-Asocjacjne podobieństwo tekstów
+Asocjacyjne podobieństwo tekstów
 =====================
 
 Cel ćwiczenia
