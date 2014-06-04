@@ -40,7 +40,15 @@ Z tymi problemami typowo radzimy sobie w następujący sposób:
 
 Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną metodą jest miara TF-IDF 
 (Term Frequency - Inverted Document Frequency) powstała przez iloczyn składnika TF i IDF. Jako TF można ustalić tf(t,d) = 1
-jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF określa "rzadkość" danego wyrazu:
+jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. 
+
+
+.. image:: http://latex.codecogs.com/gif.latex?TF_%7Bboolean%7D%28t%2Cd%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%200%20%26%20dla%20%5C%3A%20t%20%5Cin%20d%20%5C%5C%201%20%26%20dla%20%5C%3A%20%5C%3A%20t%20%5Cnotin%20d%20%5Cend%7Bmatrix%7D%5Cright.
+
+Oprócz zwykłej miary TF typu boolean, zależnie od zastosowania można użyć jeszcze wariantów miary TF, mianowicie zliczać częstość występowania, normalizować 
+go ilością wyrazów w dokumencie, lub też brać logarytm częstości wytłumić wartości wyrazów niezwykle często reprezentowanych.
+
+Miara IDF określa "rzadkość" danego wyrazu:
 
 .. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C%5C{d:t%5Cin%20d%5C}%7C%7D
 
