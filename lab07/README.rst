@@ -28,23 +28,25 @@ Można następnie porównać dwa teksty w postaci wektorowej korzystając już z
 
 Takie podejście ma pewne wady, a mianowicie:
 
-* Wyrazy bardzo często występujące we wszystkich tekstach nie niosą z sobą informacji, a mają mocny wpływ na pozorne podobieństwo 
-* Wyrazy występujące tylko w 1 tekście niosą z sobą dużo informacji (patrz: prawo Zipfa), ale nie mają dużego wpływu na podobieństwo
-* Zgodność tekstów sprowadza się do dokładnej zgodności wyrazów
+* wyrazy występujące tylko w 1 tekście niosą z sobą dużo informacji (patrz: prawo Zipfa), ale nie mają dużego wpływu na podobieństwo,
+* wyrazy bardzo często występujące we wszystkich tekstach nie niosą z sobą informacji, a mają mocny wpływ na pozorne podobieństwo,
+* zgodność tekstów sprowadza się do dokładnej zgodności wyrazów.
 
-Z pierwszym problem radzimy sobie zazwyczaj w następujący sposób:
+Z tymi problemami typowo radzimy sobie w następujący sposób:
 
-* W słowniku przechowywujemy jedynie wyrazy które występują w więcej niż 1 tekście
-* Usuwamy wyrazy które występują w więcej niż 70% tekstów
-* W macierzy A której wiersze reprezentują teksty a kolumny wyrazy, wartość w danej komórce zawiera wagę danego wyrazu w danym tekście. 
+* w słowniku przechowywujemy jedynie wyrazy, które występują w więcej niż 1 raz tekście,
+* usuwamy wyrazy które występują w więcej niż 70% tekstów,
+* w macierzy A której wiersze reprezentują teksty a kolumny wyrazy, wartość w danej komórce zawiera wagę danego wyrazu w danym tekście. 
 
-Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną jest metryka TF-IDF 
+Istnieje wiele sposobów wyznaczenia takiej wagi. Najbardziej popularną metodą jest miara TF-IDF 
 (Term Frequency - Inverted Document Frequency) powstała przez iloczyn składnika TF i IDF. Jako TF można ustalić tf(t,d) = 1
 jeśli wyraz t występuje w dokumencie d, 0 w przeciwnym wypadku. Miara IDF określa "rzadkość" danego wyrazu:
 
 .. image:: http://latex.codecogs.com/gif.latex?IDF(t)%3Dlog%5Cfrac%7B%7CD%7C%7D%7B%7C%5C{d:t%5Cin%20d%5C}%7C%7D
 
-Dla D - zbioru wszystkich dokumentów.
+Dla D - zbioru wszystkich dokumentów. Można powiedzeć, że miara TF-IDF mierzy jednocześnie rzadkość korpusową wyrazu i jego częstość w dokumencie. 
+Na miarę tą możemy także patrzeć jako na jeden ze sposobów wyznaczania słów kluczowych w danym tekście. Staramy się znaleźć wyrazy najbardziej
+charakterystyczne dla danego tekstu i im przypisać wysoką wagę. Dlatego ten sam wyraz w różnych dokumentach będzie miał różną wartość miary TF-IDF.
 
 TF-IDF(t,d) określamy jako TF-IDF(t,d)=TF(t,d)*IDF(t).
 
@@ -80,12 +82,12 @@ Zadanie:
 1. Przedstawić zbiór notatek PAP w postaci modelu Bag Of Words po sprowadzeniu do form podstawowych korzystając ze
 stemmera słownikowego
 
-2. Zbudować model LSA i LDA korzystając np. z pakietu gensim 
+2. Zbudować modele LSA i LDA korzystając np. z pakietu gensim 
 (tutorial : http://radimrehurek.com/gensim/tutorial.html zawiera praktycznie całość zadania z wyjątkiem dostarczenia 
 danych wejściowych)
 
 3. Napisać program który dla danej notatki PAP przedstawi dla niej N najbardziej zbliżonych tematycznie notatek, wypisze jej
-najistotniejsze "topici" w modelu LSA i LDA.
+najistotniejsze "topics" w modelu LSA i LDA.
 
 Notatki PAP znajdują się na wierzbie na ścieżce /usr/local/teksty/polskie_iso/wspolczesne/Prasa/pap-all.not
 
